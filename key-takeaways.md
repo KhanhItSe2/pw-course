@@ -33,9 +33,11 @@
 **4. Simple Workflow**
 
 - **Không dùng global config**
-  ![alt text](image.png)
-- **Dùng global config**
-  ![alt text](image-1.png)
+
+    init -> config -> add -> commit -> push
+- **Dùng global config**    
+
+    init -> add -> commit -> push
 
 **5. Commit Convention**
 
