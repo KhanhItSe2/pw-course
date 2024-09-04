@@ -1,0 +1,41 @@
+I. Git
+    - Xem lịch sử commit: git log
+    - Thay đổi message: git commit --amend
+                        git commit --amend -m"<message>"
+    - Chuyển file từ vùng staging về vùng working directory: git restore --stage <file>
+    - Chuyển file từ vùng Repository về vùng working directory: git reset HEAD~1 (1 tương ứng với 1 commit mới nhất) 
+    - Tạo nhánh (branch) - branch để tạo ra vùng làm việc mới không ảnh hưởng đến vùng làm việc đã ổn định
+        . git branch <ten_nhanh> : Tạo nhánh mới
+        . git checkout <ten_nhanh> :  Chuyển qua nhánh đã tạo
+        . git checkout -b <ten_nhanh> : Tạo và chuyển qua nhánh đã tạo 
+        *Note*: Luôn tạo branch mới trước khi thực hiện một lệnh copy từ internet.
+    - .gitignore: Dùng để bỏ qua những files/folders không cần git theo dõi
+II. Javascript
+    1. Conventions:
+        - snake-case:
+        - kebab-case: tên file
+        - camelCase: tên biến
+        - PascalCase: tên class
+    
+    2. Console.log 
+        console.log('   ', variables); ---> nếu variables là số thì thể hiện số
+        console.log("   " + variables); ---> String type
+        console.log(`${variables}`);    
+
+    3. Object
+        let/const <ten_object> = {
+            <key> : <value>
+        }
+        get value of key: object.key, object["key"]
+        change value of key: object.key = "<new_value>",
+        multiples objects: object.key1.key2, object["key1"]["key2"]
+    
+    4. Logical operator
+        &&: cả 2 vế mệnh đề đúng thì thực hiện tiếp câu lệnh
+        ||: 1 trong 2 vế mệnh đề đúng thì thực hiện tiếp câu lệnh (xét từ trái qua phải)
+        !: đảo ngược giá trị mệnh đề (false -> true, true -> false)
+
+    5. Array
+        Khai báo mảng: let/const array = []
+        Độ dài mảng: array.length
+        Lấy phần tử theo index: [0],[1],[2]
