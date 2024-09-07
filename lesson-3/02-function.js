@@ -1,5 +1,5 @@
 //1.
-function BMI(weight, height) {
+function bMI(weight, height) {
     let result;
     let bmi = weight / (height * height);
     if (bmi < 18.5) {
@@ -13,10 +13,10 @@ function BMI(weight, height) {
     }
     return result;
 }
-console.log(BMI(65, 1.70));
+console.log(bMI(65, 1.70));
 
 //2.
-function ConvertTemperature(temperature, type) {
+function convertTemperature(temperature, type) {
     let convertedTemp;
     switch (type) {
         case ('F'): {
@@ -30,22 +30,22 @@ function ConvertTemperature(temperature, type) {
     }
     return convertedTemp;
 }
-console.log(ConvertTemperature(30, "C"));
+console.log(convertTemperature(30, "C"));
 
 
 //3.
 const array = [1, 0, 5, 3, 78, 912];
-function SumArray(array) {
+function sumArray(array) {
     let sum = 0;
     for (let i of array) {
         sum += i;
     }
     return sum;
 }
-console.log(SumArray(array));
+console.log(sumArray(array));
 
 //4.
-function FindPrimeNumber(array) {
+function findPrimeNumber(array) {
     let primeArray = [];
     for (let i = 0; i < array.length; i++) {
         let prime = true;
@@ -66,7 +66,7 @@ function FindPrimeNumber(array) {
     return primeArray;
 }
 
-console.log(FindPrimeNumber([1, 2, 0, 10, 15, 3, 7, 11, 20, 19, 23, 29]));
+console.log(findPrimeNumber([1, 2, 0, 10, 15, 3, 7, 11, 20, 19, 23, 29]));
 
 //5.
 let userArray = [{
@@ -82,7 +82,7 @@ let userArray = [{
     name: "Khang",
     email: "nguyentrankhang@gmail.com"
 }]
-function UpdateEmail(name, newEmail) {
+function updateEmail(name, newEmail) {
     for (let object of userArray) {
         if (object["name"] === name) {
             object.email = newEmail;
@@ -90,7 +90,7 @@ function UpdateEmail(name, newEmail) {
     }
     return userArray;
 }
-console.log(UpdateEmail("Khanh", "nguyenankhanh@gmail.com"));
+console.log(updateEmail("Khanh", "nguyenankhanh@gmail.com"));
 
 //6.
 let studentList = [{
@@ -110,7 +110,7 @@ let studentList = [{
     score: 85
 }]
 
-function AverageScore(list) {
+function averageScore(list) {
     let count = 0;
     let sum = 0;
     for (let student of list) {
@@ -120,7 +120,7 @@ function AverageScore(list) {
     return (sum / count)
 }
 
-console.log(AverageScore(studentList));
+console.log(averageScore(studentList));
 
 //7.
 let productList = [{
@@ -139,7 +139,7 @@ let productList = [{
     "name": "product 5",
     price: 85
 }]
-function CheckPrice(list) {
+function checkPrice(list) {
     // for (let product of list) {
     //     if (product["price"] < 0) {
     //         return false;
@@ -155,9 +155,9 @@ function CheckPrice(list) {
     }
     return result;
 }
-console.log(CheckPrice(productList));
+console.log(checkPrice(productList));
 //8.
-function IsOpenedStore(hour) {
+function isOpenedStore(hour) {
     let result = "";
     if (hour <= 23 && hour >= 0) {
         if (hour >= 9 && hour <= 21) {
@@ -170,12 +170,15 @@ function IsOpenedStore(hour) {
     }
     return result;
 }
-console.log(IsOpenedStore(15));
+console.log(isOpenedStore(15));
 
 //9.
-function CheckAge(age) {
+function checkAge(age) {
     let result = "";
-    if (age <= 5) {
+    if (age <= 0){
+        result = "Tuổi không hợp lệ!!";
+    }
+    else if (age <= 5) {
         result = "Miễn phí vé vào cổng";
     } else if (age >= 18) {
         result = "Giá vé: 100k";
@@ -184,9 +187,9 @@ function CheckAge(age) {
     }
     return result;
 }
-
+console.log(checkAge(17));
 //10.
-function PrintMonth(month) {
+function printMonth(month) {
     let result = "";
     switch (month) {
         case 1:
@@ -232,4 +235,4 @@ function PrintMonth(month) {
     return result;
 }
 
-console.log(PrintMonth(4));
+console.log(printMonth(4));
