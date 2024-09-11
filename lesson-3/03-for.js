@@ -26,7 +26,6 @@ console.log(arr);
 //4.
 let emails = [];
 for (let i = 1; i <= 10; i++) {
-    // console.log(`user${i}@example.com` )
     emails.push(`user${i}@example.com`);
 }
 console.log(emails);
