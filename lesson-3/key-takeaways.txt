@@ -39,3 +39,69 @@ II. Javascript
         Khai báo mảng: let/const array = []
         Độ dài mảng: array.length
         Lấy phần tử theo index: [0],[1],[2]
+
+    6. Function
+        function <nameFunction>(parameter) = { //code }
+        nameFunction - camelCase
+        parameter (option): tham số truyền vào
+        return value: trả về giá trị của hàm
+
+    7. Phạm vi của biến
+        var: global scope
+        let: internal scope {}
+    
+    8. == và !=
+        So sánh kiểu lỏng lẻo
+        Không quan tâm kiểu dữ liệu 
+
+    9. Advanced condition
+        if(<condition>) {
+
+        }else {
+
+        }
+
+        if(<condition>){
+
+        }else if(<condition>){
+
+        }else {
+
+        }
+
+        switch(){
+            case a:
+            //code
+            break;
+            case b:
+            //code 
+            break;
+            default:
+        }
+
+    10. Advanced loop
+        break: thoát ra khỏi vòng lặp
+        continue: tiếp tục vòng lặp bỏ qua đoạn code phía sau
+
+        for(let index in object){}: dùng cho string, array, object và lặp lại properties 
+        Ex: 
+            for(let index in [a,b,c]){
+                console.log(index) //0,1,2
+            }
+
+        array.forEach(index => {<index do something>}): lặp lại các phần tử trong mảng
+        Ex:
+            ['a', 'b', 'c'].forEach(
+                val => console.log(val)     // a, b, c (array values)
+            );
+
+            ['a', 'b', 'c'].forEach(
+                (val, i) => console.log(i)  // 0, 1, 2 (array indexes)
+            );
+
+        for(let index of array){}: dùng cho string, array, object và ngược lại với for...in...
+        Ex: 
+            for(let index of [a,b,c]){
+                console.log(index) //a,b,c
+            }
+ 
