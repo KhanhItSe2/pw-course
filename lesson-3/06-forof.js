@@ -36,9 +36,16 @@ console.log("3/ ", arr3)
 //4.
 const arr4 = [1, 2, 3, 1, 2, 4, 5];
 const newArr = []
-for (let i of arr4) {
-    if (!newArr.includes(i)) {
-        newArr.push(i)
+for(let i of arr4){
+    let isDuplicated = false;
+    for (let j of newArr){
+        if (j === i){
+            isDuplicated = true;
+            break
+        }
+    }
+    if (!isDuplicated) {
+        newArr.push(i);
     }
 }
 console.log(`4/ ${newArr}`)
