@@ -84,7 +84,7 @@ let userArray = [{
 }]
 function updateEmail(name, newEmail) {
     for (let object of userArray) {
-        if (object["name"] === name) {
+        if (object.name === name) {
             object.email = newEmail;
         }
     }
@@ -111,15 +111,12 @@ let studentList = [{
 }]
 
 function averageScore(list) {
-    let count = 0;
     let sum = 0;
     for (let student of list) {
-        count++;
-        sum += student["score"]
+        sum += student.score
     }
-    return (sum / count)
+    return (sum / list.length)
 }
-
 console.log(averageScore(studentList));
 
 //7.
@@ -141,7 +138,7 @@ let productList = [{
 }]
 function checkPrice(list) {
     // for (let product of list) {
-    //     if (product["price"] < 0) {
+    //     if (product.price <= 0) {
     //         return false;
     //     }
     // }
@@ -175,7 +172,7 @@ console.log(isOpenedStore(15));
 //9.
 function checkAge(age) {
     let result = "";
-    if (age <= 0){
+    if (age <= 0) {
         result = "Tuổi không hợp lệ!!";
     }
     else if (age <= 5) {
@@ -236,3 +233,28 @@ function printMonth(month) {
 }
 
 console.log(printMonth(4));
+
+//11.
+function categoryStudent(score) {
+    if (score >= 8) {
+        console.log("Giỏi");
+    } else if (score >= 6.5 && score < 8) {
+        console.log("Khá");
+    } else if (score >= 5 && score < 6.5) {
+        console.log("Trung bình");
+    } else {
+        console.log("Yếu");
+    }
+}
+categoryStudent(2);
+//12.
+function weather(temperature) {
+    if (temperature >= 30) {
+        console.log("Nóng");
+    } else if (temperature < 30 && temperature >= 20) {
+        console.log("Mát");
+    } else {
+        console.log("Lạnh");
+    }
+}
+weather(24)
