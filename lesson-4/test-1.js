@@ -4,8 +4,7 @@ let mission = "Khám phá Vũ trụ K9";
 let crew = ["Uyên Thanh", "Lan Anh", "Minh Trang Bui", "Khanh Đinh", "Nguyễn Duyên", "Trường Lâm", "Lê Long", "Tuấn Phạm", "Âu Dương Thoại", "Phạm Thu Thủy", "Khánh Nguyễn"];
 
 function launchShip(crew) {
-    return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${crew} sẽ đồng hành cùng bạn trong chuyến
-phiêu lưu ${mission}!".`
+    return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${crew} sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}!`
 }
 
 console.log(launchShip(crew));
